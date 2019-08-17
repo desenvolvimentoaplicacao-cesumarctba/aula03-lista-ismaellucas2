@@ -23,9 +23,9 @@
             //print_r ($_POST);
             $celsius = $_POST['celsius'];
             $kelvin = $celsius + 273.15;
-
-            echo "A temperatura em celcius é: $celsius C <br>"; 
-            echo "A temperatura em kelvin é: $kelvin K <br>"; 
+            $kelvin = number_format($kelvin);
+            echo "A temperatura em celsius é: $celsius C <br>"; 
+            echo "A temperatura em kelvin é: $kelvin K<br>"; 
            ?>
 
     </body>
