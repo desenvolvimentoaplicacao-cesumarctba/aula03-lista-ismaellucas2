@@ -22,7 +22,8 @@
           	<?php
           	//print_r ($_POST);
             $fahrenheit = $_POST['fahrenheit'];
-            $celsius =  (( $fahrenheit - 32 ) * 5) / 9;
+            $celsius =  number_format(($fahrenheit - 32 ) * 5) / 9;
+            $celsius = number_format($celsius);
             echo "A temperatura em fahrenheit é: $fahrenheit F <br>"; 
             echo "A temperatura em celsius é: $celsius C<br>"; 
            ?>
